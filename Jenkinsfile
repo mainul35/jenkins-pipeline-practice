@@ -6,7 +6,7 @@ node {
       // Get some code from a GitHub repository
       try{
          sh 'cd ~/'
-         git pull 'https://github.com/mainul35/jenkins-pipeline-practice.git'
+         git clone 'https://github.com/mainul35/jenkins-pipeline-practice.git'
       }
       catch (err){
          echo err
