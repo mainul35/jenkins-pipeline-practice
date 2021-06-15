@@ -6,6 +6,7 @@ node {
       // Get some code from a GitHub repository
       try{
          sh 'ssh root@192.168.1.33'
+         sh 'ifconfig'
          sh 'cd ~/'
          sh 'git clone https://github.com/mainul35/jenkins-pipeline-practice.git'
       }
